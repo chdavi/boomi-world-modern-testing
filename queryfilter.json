@@ -1,0 +1,30 @@
+{
+  "QueryFilter": {
+    "expression": {
+      "operator": "and",
+      "nestedExpression": [
+        {
+          "argument": [
+            "PROCESS_ID"
+          ],
+          "operator": "EQUALS",
+          "property": "processId"
+        },
+        {
+          "argument": [
+            "ARGUMENT_ID"
+          ],
+          "operator": "EQUALS",
+          "property": "atomId"
+        },
+        {
+          "argument": [
+            "BEFORE"
+          ],
+          "operator": "GREATER_THAN",
+          "property": "executionTime"
+        }
+      ]
+    }
+  }
+}
